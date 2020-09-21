@@ -3,3 +3,7 @@
 vte-terminal {
     padding: 10px;
 }
+###
+VteTerminal, vte-terminal {
+    padding: 5px;
+}
