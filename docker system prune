@@ -1,0 +1,10 @@
+sudo docker image ls -f dangling=true 
+#неиспользуемые образы
+
+docker image ls -f dangling=true | awk '{ sum+=$7} END {print sum}'
+#сумма занятого ими места
+
+docker image rm $(docker image ls -f dangling=true -q)
+#удалить
+
+docker system prune
