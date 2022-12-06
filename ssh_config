@@ -1,0 +1,4 @@
+Host github.com
+ IdentityFile ~/.ssh/keyname
+Host gitlab.local
+ IdentityFile ~/.ssh/keyname
